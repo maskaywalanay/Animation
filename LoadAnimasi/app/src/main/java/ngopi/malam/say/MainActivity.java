@@ -38,9 +38,25 @@ public class MainActivity extends Activity
 				public void onClick(View p1)
 				{
 					// text yang akan di beri animasi
+					txt.setText("Animasi Zoom Enter Dari Folder Anim");
+					txt.setSelected(true);
 					txt.startAnimation(aniz);
 					
 				}
+		});
+		
+		// Aksi dengan Menahan tombol 
+		btn.setOnLongClickListener(new View.OnLongClickListener()
+			{
+
+				@Override
+				public boolean onLongClick(View p1)
+				{
+					txt.setAnimation(anu);
+					return true;
+				}
+				
+			
 		});
     }
 }
