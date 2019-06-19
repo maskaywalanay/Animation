@@ -52,7 +52,8 @@ public class MainActivity extends Activity
 				@Override
 				public boolean onLongClick(View p1)
 				{
-					txt.setAnimation(anu);
+					txt.setText("Menggunakan Animasi Zoom Out Dari Folder Anim");
+					txt.startAnimation(anu);
 					return true;
 				}
 				
